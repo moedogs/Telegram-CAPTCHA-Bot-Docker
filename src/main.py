@@ -43,12 +43,12 @@ class _Timer:
 
 def load_config():
     global _config
-    with open("config.json", encoding="utf-8") as f:
+    with open("./conf/config.json", encoding="utf-8") as f:
         _config = json.load(f)
 
 
 def save_config():
-    with open("config.json", "w") as f:
+    with open("./conf/config.json", "w") as f:
         json.dump(_config, f, indent=4)
 
 
